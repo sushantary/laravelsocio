@@ -1,8 +1,9 @@
 <script setup>
 import { Head } from '@inertiajs/vue3';
 import GroupList from "@/Components/app/GroupList.vue";
-import PostItems from "@/Components/app/PostItems.vue";
-import FollowerItems from "@/Components/app/FollowerItems.vue";
+import PostList from "@/Components/app/postList.vue";
+import FollowingList from "@/Components/app/FollowingList.vue";
+import CreatePost from "@/Components/app/CreatePost.vue";
 
 
 defineProps({
@@ -14,11 +15,18 @@ defineProps({
 
     <Head title="Home" />
     <div class="grid grid-cols-12 gap-3">
-        <div class="col-span-3 border-inherit rounded bg-gray-50 py-6 px-3">
+        <div class="col-span-3 bg-gray-50">
             <group-list />
         </div>
-        <post-items />
-        <follower-items />
+        <div class="col-span-6 bg-gray-50">
+            <div>
+                <create-post />
+            </div>
+            <post-list />
+        </div>
+        <div class="col-span-3 bg-red-50 ">
+            <following-list />
+        </div>
 
 
     </div>
