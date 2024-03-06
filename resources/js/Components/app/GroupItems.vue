@@ -6,14 +6,14 @@ defineProps({
 })
 </script>
 <template>
-    <div class=" mb-3 hover:bg-gray-200  cursor-pointer">
-       <div class="flex items-start gap-1  px-2 py-2">
-           <img :src="image" class="w-[48px] rounded-full" alt="random img"/>
-        <div>
-           <h3 class="font-black text-lg">{{ title }}</h3>
-           <p class="text-gray-600 font-semi-bold">{{ description }}</p>
+    <div class=" mb-3 hover:bg-indigo-100 rounded-xl cursor-pointer">
+        <div class="flex items-start gap-1  px-2 py-2">
+            <img :src="image" alt="random img" class="w-[48px] rounded-full"/>
+            <div>
+                <h3 class="font-black text-lg">{{ title }}</h3>
+                <p class="text-gray-600 font-semi-bold">{{ description }}</p>
+            </div>
         </div>
-       </div>
     </div>
 </template>
 

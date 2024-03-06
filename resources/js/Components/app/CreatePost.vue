@@ -9,10 +9,10 @@ const postCreating = ref(false);
     <div class="py-6">
         <div class="py-3 px-2 text-gray-800" @click="postCreating = true">
             <h3>Post</h3>
-            <textarea id="about"
-                      class="relative block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      name="about"
-                      placeholder="share your post"></textarea>
+            <input id="about"
+                   class="relative block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                   name="about"
+                   placeholder="click here to post"></input>
         </div>
         <div v-if="postCreating" class="mt-6 flex items-center justify-end gap-x-2">
             <button
