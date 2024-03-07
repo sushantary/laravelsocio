@@ -4,9 +4,6 @@ import GroupList from "@/Components/app/GroupList.vue";
 import PostList from "@/Components/app/postList.vue";
 import FollowingList from "@/Components/app/FollowingList.vue";
 import CreatePost from "@/Components/app/CreatePost.vue";
-
-
-defineProps({})
 </script>
 
 <template>

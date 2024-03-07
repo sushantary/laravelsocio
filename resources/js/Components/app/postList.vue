@@ -30,6 +30,26 @@ const post1 = {
         id: 1,
         name: "Group 1"
     },
+    attachments: [
+        {
+            id: 1,
+            name: 'test.png',
+            url: "https://picsum.photos/1080",
+            mime: 'image/png'
+        },
+        {
+            id: 2,
+            name: 'testpng.png',
+            url: "https://picsum.photos/1000",
+            mime: 'image/png'
+        },
+        {
+            id: 3,
+            name: 'myDocuments.docx',
+            url: '#',
+            mime: 'application/msword'
+        }
+    ],
     body: getRandomParagraph(),
     created_at: "2022-01-01 00:00:00",
 }
@@ -40,6 +60,26 @@ const post2 = {
         name: "John Doe"
     },
     group: null,
+    attachments: [
+        {
+            id: 1,
+            name: 'test.png',
+            url: "https://picsum.photos/1050",
+            mime: 'image/png'
+        },
+        {
+            id: 2,
+            name: 'testpng.png',
+            url: "https://picsum.photos/1020",
+            mime: 'image/png'
+        },
+        {
+            id: 3,
+            name: 'myDocuments.docx',
+            url: '#',
+            mime: 'application/msword'
+        }
+    ],
     body: getRandomParagraph(),
     created_at: "2022-01-01 00:00:00",
 }
@@ -83,6 +123,26 @@ const post6 = {
         name: "Ms Dhoni"
     },
     group: null,
+    attachments: [
+        {
+            id: 1,
+            name: 'test.png',
+            url: "https://picsum.photos/1090",
+            mime: 'image/png'
+        },
+        {
+            id: 2,
+            name: 'testpng.png',
+            url: "https://picsum.photos/1099",
+            mime: 'image/png'
+        },
+        {
+            id: 3,
+            name: 'myDocuments.docx',
+            url: '#',
+            mime: 'application/msword'
+        }
+    ],
     body: getRandomParagraph(),
     created_at: "2022-01-01 00:00:00",
 }
@@ -116,22 +176,42 @@ const post9 = {
         id: 2,
         name: "Laravel Developer",
     },
+    attachments: [
+        {
+            id: 1,
+            name: 'test.png',
+            url: "https://picsum.photos/1180",
+            mime: 'image/png'
+        },
+        {
+            id: 2,
+            name: 'testpng.png',
+            url: "https://picsum.photos/1200",
+            mime: 'image/png'
+        },
+        {
+            id: 3,
+            name: 'myDocuments.docx',
+            url: '#',
+            mime: 'application/msword'
+        }
+    ],
     body: getRandomParagraph(),
     created_at: "2022-01-01 00:00:00",
 }
 </script>
 <template>
-    <div class="px-3">
+    <div class="px-2">
         <div>
-            <post-items :post='post1'/>
-            <post-items :post='post2'/>
-            <post-items :post='post3'/>
-            <post-items :post='post4'/>
-            <post-items :post='post5'/>
-            <post-items :post='post6'/>
-            <post-items :post='post7'/>
-            <post-items :post='post8'/>
-            <post-items :post='post9'/>
+            <post-items :posts='post1'/>
+            <post-items :posts='post2'/>
+            <post-items :posts='post3'/>
+            <post-items :posts='post4'/>
+            <post-items :posts='post5'/>
+            <post-items :posts='post6'/>
+            <post-items :posts='post7'/>
+            <post-items :posts='post8'/>
+            <post-items :posts='post9'/>
 
 
         </div>
